@@ -17,9 +17,10 @@ public class Agesort_10814 {
             list[i][1] = st.nextToken();
         }
 
-        Arrays.sort(list, (a, b) ->
-                Integer.parseInt(a[0]) - Integer.parseInt(b[0])
-        );
+        Arrays.sort(list, (a, b) -> {
+
+        return Integer.parseInt(a[0]) - Integer.parseInt(b[0]);
+        });
 
         StringBuilder sb = new StringBuilder();
         for(int i=0; i<count; i++){
